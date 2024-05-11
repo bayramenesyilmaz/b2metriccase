@@ -1,5 +1,5 @@
 "use client";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import React, { useContext, createContext, useState, useEffect } from "react";
 
 const AuthContext = createContext();
@@ -8,6 +8,7 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [currentUser, setCurrentUser] = useState(null);
   const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
     const storedUser = localStorage.getItem("currentUser");
@@ -30,7 +31,11 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     if (currentUser) {
-      router.push("/dashboard");
+      if (pathname === "/") {
+        router.push("/dashboard");
+      } else {
+        router.push(pathname);
+      }
       setLoading(false);
     } else {
       router.push("/login");

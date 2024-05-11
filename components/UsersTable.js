@@ -2,7 +2,6 @@ import React from "react";
 import useSWR from "swr";
 import { DataGrid } from "@mui/x-data-grid";
 import { Avatar, Chip } from "@mui/material";
-import { HOST_NAME } from "@/constant/host";
 
 const columns = [
   {
@@ -48,6 +47,7 @@ const columns = [
     ),
   },
 ];
+const isLocal = process.env.NODE_ENV === "development";
 
 export default function UsersTable({ dateRangeValues }) {
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
@@ -57,7 +57,9 @@ export default function UsersTable({ dateRangeValues }) {
     isLoading,
   } = useSWR(
     dateRangeValues
-      ? `${HOST_NAME}/api/users?startDate=${JSON.stringify(
+      ? `${
+          isLocal ? "http://localhost:3000" : "vercel.com"
+        }/api/users?startDate=${JSON.stringify(
           dateRangeValues[0]
         )}&endDate=${JSON.stringify(dateRangeValues[1])}`
       : null,

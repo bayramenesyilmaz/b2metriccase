@@ -4,7 +4,8 @@ import EChartsComponent from "@/components/LineCharts";
 import DetailBox from "@/components/DetailBox";
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import { calculateTotalMetrics, mergedFilteredData } from "@/lib/utils";
-import { HOST_NAME } from "@/constant/host";
+
+const isLocal = process.env.NODE_ENV === "development";
 
 export default function OverviewContent({
   platformSelectValues,
@@ -20,9 +21,9 @@ export default function OverviewContent({
     isLoading,
   } = useSWR(
     platformSelectValues
-      ? `${HOST_NAME}/api/overview?platform=${JSON.stringify(
-          platformSelectValues
-        )}`
+      ? `${
+          isLocal ? "http://localhost:3000" : "vercel.com"
+        }/api/overview?platform=${JSON.stringify(platformSelectValues)}`
       : null,
     fetcher
   );
