@@ -1,5 +1,12 @@
 # B2Metric Case
 
+## Kullanıcı Bilgileri
+
+- Email: admin@hotmail.com
+- Password: admin123
+
+Projeyi incelemek için canlı linki ziyaret edebilirsiniz: [Live](https://b2metriccase.vercel.app/).
+
 Bu proje, B2Metric case çalışması için oluşturulmuştur. Projede aşağıdaki teknoloji ve kütüphaneler kullanılmıştır:
 
 - [Next.js](https://nextjs.org/): Next.js, React tabanlı web uygulamaları için bir framework'tür. Sayfa yönlendirme, dosya tabanlı route'lar ve otomatik kod bölümleme gibi birçok özelliği destekler.
@@ -18,13 +25,6 @@ Bu proje, B2Metric case çalışması için oluşturulmuştur. Projede aşağıd
 - Iconlar ve kullanıcı tablosuD için Material-UI kütüphanesini kullandım.
 - Context API ile auth context oluşturdum ve kullanıcının oturumu varsa dashboarda yönlendiriyorum, yoksa login sayfasına.
 - Proje, responsive olarak çalışmaktadır.
-
-## Kullanıcı Bilgileri
-
-- Email: admin
-- Password: admin123
-
-Projeyi incelemek için canlı linki ziyaret edebilirsiniz: [Live](https://b2metriccase.vercel.app/).
 
 ## Projeden Görüntüler
 
