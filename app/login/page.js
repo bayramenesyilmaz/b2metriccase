@@ -20,7 +20,7 @@ export default function Login() {
 
         <div className="text-center">
           <p className="mt-2 text-sm text-gray-600">
-            Don't have an account?
+            Dont have an account?
             <a
               href="#"
               className="ml-1 font-medium text-indigo-600 hover:text-indigo-500"

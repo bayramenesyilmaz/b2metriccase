@@ -24,6 +24,8 @@ Bu proje, B2Metric case çalışması için oluşturulmuştur. Projede aşağıd
 - Email: admin
 - Password: admin123
 
+Projeyi incelemek için canlı linki ziyaret edebilirsiniz: [Live](proje_canli_linki).
+
 ## Projeden Görüntüler
 
 ![SS1](/public/ss1.png)
