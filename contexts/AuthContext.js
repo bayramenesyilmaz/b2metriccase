@@ -17,21 +17,9 @@ export const AuthProvider = ({ children }) => {
     }
   }, []);
 
-  const login = (user) => {
-    localStorage.setItem("currentUser", JSON.stringify(user));
-    setCurrentUser(user);
-    router.push("/dashboard");
-  };
-
-  const logout = () => {
-    localStorage.removeItem("currentUser");
-    setCurrentUser(null);
-    router.push("/login");
-  };
-
   useEffect(() => {
     if (currentUser) {
-      if (pathname === "/") {
+      if (pathname === "/" || pathname === "/login") {
         router.push("/dashboard");
       } else {
         router.push(pathname);
@@ -45,6 +33,18 @@ export const AuthProvider = ({ children }) => {
       }, 1000);
     }
   }, [currentUser]);
+
+  const login = (user) => {
+    localStorage.setItem("currentUser", JSON.stringify(user));
+    setCurrentUser(user);
+    router.push("/dashboard");
+  };
+
+  const logout = () => {
+    localStorage.removeItem("currentUser");
+    setCurrentUser(null);
+    router.push("/login");
+  };
 
   return (
     <AuthContext.Provider value={{ currentUser, login, logout }}>

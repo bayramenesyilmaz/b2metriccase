@@ -19,9 +19,9 @@ export default function LoginForm() {
     e.preventDefault();
 
     setLoading(true);
-
     if (email === adminEmail && password === adminPassword) {
       const user = { email, password };
+      console.log({ email, password });
       await login(user);
     } else {
       setTimeout(() => {

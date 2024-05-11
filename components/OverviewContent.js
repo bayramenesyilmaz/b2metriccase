@@ -22,7 +22,7 @@ export default function OverviewContent({
   } = useSWR(
     platformSelectValues
       ? `${
-          isLocal ? "http://localhost:3000" : "vercel.com"
+          isLocal ? "http://localhost:3000" : "https://b2metriccase.vercel.app"
         }/api/overview?platform=${JSON.stringify(platformSelectValues)}`
       : null,
     fetcher

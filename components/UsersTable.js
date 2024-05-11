@@ -58,7 +58,7 @@ export default function UsersTable({ dateRangeValues }) {
   } = useSWR(
     dateRangeValues
       ? `${
-          isLocal ? "http://localhost:3000" : "vercel.com"
+          isLocal ? "http://localhost:3000" : "https://b2metriccase.vercel.app"
         }/api/users?startDate=${JSON.stringify(
           dateRangeValues[0]
         )}&endDate=${JSON.stringify(dateRangeValues[1])}`
