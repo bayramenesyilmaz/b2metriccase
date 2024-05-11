@@ -2,6 +2,7 @@ import React from "react";
 import useSWR from "swr";
 import { DataGrid } from "@mui/x-data-grid";
 import { Avatar, Chip } from "@mui/material";
+import { HOST_NAME } from "@/constant/host";
 
 const columns = [
   {
@@ -56,7 +57,7 @@ export default function UsersTable({ dateRangeValues }) {
     isLoading,
   } = useSWR(
     dateRangeValues
-      ? `http://localhost:3000/api/users?startDate=${JSON.stringify(
+      ? `${HOST_NAME}/api/users?startDate=${JSON.stringify(
           dateRangeValues[0]
         )}&endDate=${JSON.stringify(dateRangeValues[1])}`
       : null,

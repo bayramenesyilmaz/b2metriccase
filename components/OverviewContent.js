@@ -4,6 +4,7 @@ import EChartsComponent from "@/components/LineCharts";
 import DetailBox from "@/components/DetailBox";
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import { calculateTotalMetrics, mergedFilteredData } from "@/lib/utils";
+import { HOST_NAME } from "@/constant/host";
 
 export default function OverviewContent({
   platformSelectValues,
@@ -19,7 +20,7 @@ export default function OverviewContent({
     isLoading,
   } = useSWR(
     platformSelectValues
-      ? `http://localhost:3000/api/overview?platform=${JSON.stringify(
+      ? `${HOST_NAME}/api/overview?platform=${JSON.stringify(
           platformSelectValues
         )}`
       : null,
