@@ -1,11 +1,13 @@
 # B2Metric Case
 
+Projeyi incelemek için canlı linki ziyaret edebilirsiniz: [Live](https://b2metriccase.vercel.app/).
+
 ## Kullanıcı Bilgileri
 
 - Email: admin@hotmail.com
 - Password: admin123
 
-Projeyi incelemek için canlı linki ziyaret edebilirsiniz: [Live](https://b2metriccase.vercel.app/).
+## Kullanılan Teknolojiler
 
 Bu proje, B2Metric case çalışması için oluşturulmuştur. Projede aşağıdaki teknoloji ve kütüphaneler kullanılmıştır:
 
