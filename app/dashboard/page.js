@@ -55,10 +55,11 @@ export default function Home() {
           size="md"
           defaultValue={defaultPlatform}
           onChange={handleChangePlatform}
-          menuClassName="text-red-black"
+          menuStyle={{ color: "black" }}
         />
         <DateRangePicker
           style={{ width: 250 }}
+          menuStyle={{ color: "black" }}
           size="md"
           placeholder="Select Date Range"
           block
