@@ -97,7 +97,7 @@ export default function LoginForm() {
         </button>
       </div>
       <div className="flex flex-col bg-red-400 text-white p-2 rounded-md shadow-md font-semibold text-sm">
-        <p>Email : admin</p>
+        <p>Email : admin@hotmail.com</p>
         <p>Password : admin123</p>
       </div>
     </form>
