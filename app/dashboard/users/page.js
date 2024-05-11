@@ -37,6 +37,7 @@ export default function UsersPage() {
       <div className="flex justify-end my-6">
         <DateRangePicker
           style={{ width: 250 }}
+          menuStyle={{ color: "black" }}
           size="md"
           placeholder="Select Date Range"
           block
