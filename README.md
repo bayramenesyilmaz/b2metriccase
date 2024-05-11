@@ -1,3 +1,39 @@
+# B2Metric Case
+
+Bu proje, B2Metric case çalışması için oluşturulmuştur. Projede aşağıdaki teknoloji ve kütüphaneler kullanılmıştır:
+
+- [Next.js](https://nextjs.org/): Next.js, React tabanlı web uygulamaları için bir framework'tür. Sayfa yönlendirme, dosya tabanlı route'lar ve otomatik kod bölümleme gibi birçok özelliği destekler.
+- [Tailwind CSS](https://tailwindcss.com/): Tailwind CSS, HTML ve CSS için bir utility-first CSS framework'üdür. Bu proje için stilendirmelerde kullanılmıştır.
+- [Material-UI](https://mui.com/): Material-UI, React uygulamaları için Google'ın Material Design stilini uygulayan bir kütüphanedir. Projede iconlar ve bazı arayüz bileşenleri için kullanılmıştır.
+- [ECharts](https://echarts.apache.org/): ECharts, veri görselleştirme için bir JavaScript grafik kütüphanesidir. Bu projede veri görselleştirmesi için kullanılmıştır.
+- [RSuite](https://rsuitejs.com/): RSuite, React bileşenleri için bir kütüphanedir. Dropdown, multiselection ve date range gibi bileşenler için kullanılmıştır.
+- [SWR](https://swr.vercel.app/): SWR, React uygulamaları için bir data fetching kütüphanesidir. Bu projede veri alışverişi için kullanılmıştır.
+- [Context API](https://reactjs.org/docs/context.html): Context API, React uygulamalarında global state yönetimi için kullanılan bir özelliktir. Bu projede auth kontrolü için kullanılmıştır.
+
+## Özellikler
+
+- Projedeki stillendirmeler için Tailwind CSS kullandım ve custom komponentler oluşturdum.
+- Verileri sunmak için ECharts kütühanesinden line chart kullandım.
+- Dropdown, multiselection ve date range için RSuite kütüphanesini kullandım.
+- Iconlar ve kullanıcı tablosuD için Material-UI kütüphanesini kullandım.
+- Context API ile auth context oluşturdum ve kullanıcının oturumu varsa dashboarda yönlendiriyorum, yoksa login sayfasına.
+- Proje, responsive olarak çalışmaktadır.
+
+## Kullanıcı Bilgileri
+
+- Email: admin
+- Password: admin123
+
+## Projeden Görüntüler
+
+![SS1](/public/ss1.png)
+
+![SS2](/public/ss2.png)
+
+![SS3](/public/ss3.png)
+
+![SS4](/public/ss4.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
