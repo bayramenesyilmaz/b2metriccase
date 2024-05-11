@@ -6,7 +6,7 @@ export default function Layout({ children }) {
       {/* Sidebar */}
       <Sidebar />
       {/* Content */}
-      <main className="flex-1 p-4 px-8 overflow-auto">{children}</main>
+      <main className="flex-1 p-4 px-2 sm:px-8 overflow-auto">{children}</main>
     </div>
   );
 }

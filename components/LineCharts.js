@@ -66,5 +66,5 @@ export default function EChartsComponent({ data, dateRange }) {
     };
   }, [data]);
 
-  return <div ref={chartRef} className="w-full h-[350px]" />;
+  return <div ref={chartRef} className="h-[350px] min-w-[500px] w-full" />;
 }

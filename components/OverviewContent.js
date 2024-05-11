@@ -58,8 +58,8 @@ export default function OverviewContent({
         />
       </div>
 
-      <div className="w-full mt-6">
-        <div className="flex justify-center gap-4 text-sm">
+      <div className="overflow-auto w-full mt-6 py-6 bg-slate-50">
+        <div className="flex justify-center gap-4 text-sm text-black">
           <div className="flex items-center gap-1">
             <CheckBoxOutlineBlankIcon color="primary" />
             User Count

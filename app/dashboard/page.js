@@ -20,7 +20,8 @@ const defaultStartDate = new Date(
 const defaultDateRange = [defaultStartDate, defaultEndDate];
 
 export default function Home() {
-  const [platformSelectValues, setPlatformSelectValues] =useState(defaultPlatform);
+  const [platformSelectValues, setPlatformSelectValues] =
+    useState(defaultPlatform);
   const [dateRangeValues, setDateRangeValues] = useState(defaultDateRange);
   const [showOneCalendar, setShowOneCalendar] = useState(false);
 
@@ -47,13 +48,14 @@ export default function Home() {
     <main className="">
       <Header title={"Overview"} />
 
-      <div className="flex justify-end flex-wrap  gap-2 my-6">
+      <div className="flex justify-end flex-wrap gap-2 my-6">
         <TagPicker
           data={platformData}
           style={{ width: 250 }}
           size="md"
           defaultValue={defaultPlatform}
           onChange={handleChangePlatform}
+          menuClassName="text-red-black"
         />
         <DateRangePicker
           style={{ width: 250 }}
