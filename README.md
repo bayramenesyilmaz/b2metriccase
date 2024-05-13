@@ -4,7 +4,8 @@ Projeyi incelemek için canlı linki ziyaret edebilirsiniz: [Live](https://b2met
 
 ## Kullanıcı Bilgileri
 
-- Email: admin@hotmail.com
+- Email: admin@b2metric.com
+
 - Password: admin123
 
 ## Kullanılan Teknolojiler

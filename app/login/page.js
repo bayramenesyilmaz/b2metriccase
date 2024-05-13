@@ -12,7 +12,7 @@ export default function Login() {
           </h2>
 
           <h5 className="text-gray-300 text-sm font-semibold">
-            Enter your email and password bellow
+            Enter your email and password below
           </h5>
         </div>
 

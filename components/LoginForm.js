@@ -4,7 +4,7 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import { useAuth } from "@/contexts/AuthContext";
 
-const adminEmail = "admin@hotmail.com";
+const adminEmail = "admin@b2metric.com";
 const adminPassword = "admin123";
 
 export default function LoginForm() {
@@ -97,7 +97,7 @@ export default function LoginForm() {
         </button>
       </div>
       <div className="flex flex-col bg-red-400 text-white p-2 rounded-md shadow-md font-semibold text-sm">
-        <p>Email : admin@hotmail.com</p>
+        <p>Email : admin@b2metric.com</p>
         <p>Password : admin123</p>
       </div>
     </form>
